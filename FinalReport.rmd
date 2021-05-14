@@ -63,7 +63,7 @@ print(table1)
 
 ```
 
-This data shows that about 340 males were infected with Covid-19 out of approximately 10,400 males within the study. Furthermore 3.72% of the males who had received the drug got Covid-19 and 2.55% who received the placebo contracted Covid-19. Therefore this data is showing that males who received the vaccine were 58% more likely to contract Covid suggesting that the drug is ineffective for males.
+This data shows that about 340 males were infected with Covid-19 out of approximately 10,400 males within the study. Furthermore 3.72% of the males who had received the drug got Covid-19 and 2.55% who received the placebo contracted Covid-19. Therefore this data is showing that males who received the vaccine were about 50% more likely to contract Covid suggesting that the drug is ineffective for males.
 
 ## Inferential  
 
@@ -118,7 +118,7 @@ print(table2)
 
 ```
 
-This data shows that about 610 females were infected with Covid-19 out of approximately 8,600 females within the study. Furthermore 4.44% of the females who had received the drug got Covid-19 and 8.67% who received the placebo contracted Covid-19. Therefore this data is showing that females who received the vaccine were about 96% less likely to contract Covid suggesting that the drug is effective for females.
+This data shows that about 610 females were infected with Covid-19 out of approximately 8,600 females within the study. Furthermore 4.44% of the females who had received the drug got Covid-19 and 8.67% who received the placebo contracted Covid-19. Therefore this data is showing that females who received the vaccine were about 50% less likely to contract Covid suggesting that the drug is effective for females.
 
 ## Inferential  
 
@@ -162,7 +162,7 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(Druggies,aes(x=infected,y=prcnt*100,fill=treatment)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
-The bar chart shows that out of approximately ??? Druggies who were infected with Covid-19, 32% of those received the drug and 66% were given the placebo.
+The bar chart shows that out of approximately 117 Druggies who were infected with Covid-19, 32% of those received the drug and 66% were given the placebo.
 
 ## Numerical Summary
 
@@ -174,7 +174,7 @@ print(table3)
 
 ```
 
-This data shows that about 117 druggies were infected with Covid-19 out of approximately 2166 druggies within the study. Furthermore 3.63% of the druggies who had received the drug got Covid-19 and 6.46% who received the placebo contracted Covid-19. Therefore this data is showing that druggies who received the vaccine were 50% less likely to contract Covid suggesting that the drug is effective for druggies.
+This data shows that about 117 druggies were infected with Covid-19 out of approximately 2166 druggies within the study. Furthermore 3.63% of the druggies who had received the drug got Covid-19 and 6.46% who received the placebo contracted Covid-19. Therefore this data is showing that druggies who received the vaccine were about 50% less likely to contract Covid suggesting that the drug is effective for druggies.
 
 
 # Discussion & Conclusion 
