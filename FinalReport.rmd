@@ -77,7 +77,7 @@ The Chi square data shows that p-value of 0.0006181 is so small that it is highl
 $H_0$ The null hypothesis is given that taking the vaccine makes no difference in the male population contracting Covid-19 or not.  
 $H_A$ The alternative hypothesis is that the vaccine in fact does make a difference in whether or not a male contracts Covid-19. Therefore we reject the null hypothesis.
 
-The odds ratio from the Fisher Exact test is 1.47:1, when taking the odd ratio and computing it into a percent of effectiveness by using the formula O/(1+0)*100 you get 59.5% effectiveness.
+The odds ratio from the Fisher Exact test is 1.47:1, when taking the odd ratio and computing it into a percent of effectiveness by using the formula O/(1+0)*100 you get 39.5% effectiveness.
 
 
 # Females
@@ -131,7 +131,7 @@ fisher.test(table2)
 The Chi square data shows that p-value of 3.626e-16 is so small that it is highly unlikely the results were by chance.   
 $H_0$ The null hypothesis is given that taking the vaccine makes no difference in the female population contracting Covid-19 or not.  
 $H_A$ The alternative hypothesis is that the vaccine in fact does make a difference in whether or not a female contracts Covid-19. 
-Therefore we reject the null hypothesis.
+Therefore we do not reject the null hypothesis.
 
 The odds ratio from the Fisher Exact test is 2.05:1, when taking the odd ratio and computing it into a percent of effectiveness by using the formula O/(1+0)*100 you get 67.16% effectiveness.
 
@@ -160,6 +160,7 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(Druggies,aes(x=infected,y=prcnt*100,fill=treatment)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
+
 The bar chart shows that out of approximately 117 Druggies who were infected with Covid-19, 32% of those received the drug and 66% were given the placebo.
 
 ## Numerical Summary
@@ -187,7 +188,7 @@ $H_0$ The null hypothesis is given that taking the vaccine makes no difference i
 $H_A$ The alternative hypothesis is that the vaccine in fact does make a difference in whether or not a druggie contracts Covid-19. 
 Therefore we reject the null hypothesis.
 
-The odds ratio from the Fisher Exact test is 0.55:1, when taking the odd ratio and computing it into a percent of effectiveness by using the formula O/(1+0)*100 you get 35.48% effectiveness.
+The odds ratio from the Fisher Exact test is 0.55:1, when taking the odd ratio and computing it into a percent of effectiveness by using the formula O/(1+0)*100 you get 60.48% effectiveness.
 
 # LGBTQ
 
@@ -242,7 +243,7 @@ fisher.test(table4)
 
 The Chi square data shows that p-value of 1.05e-05 is so small that it is highly unlikely the results were by chance.   
 $H_0$ The null hypothesis is given that taking the vaccine makes no difference in the LGBTQ population contracting Covid-19 or not.  
-$H_A$ The alternative hypothesis is that the vaccine in fact does make a difference in whether or not a LGBTQ contracts Covid-19. Therefore we do not reject the null hypothesis.
+$H_A$ The alternative hypothesis is that the vaccine in fact does make a difference in whether or not a LGBTQ contracts Covid-19. Therefore we reject the null hypothesis.
 
 The odds ratio from the Fisher Exact test is 0.40:1, when taking the odd ratio and computing it into a percent of effectiveness by using the formula O/(1+0)*100 you get 28.6% effectiveness.
 
@@ -250,4 +251,4 @@ The odds ratio from the Fisher Exact test is 0.40:1, when taking the odd ratio a
 
 # Discussion & Conclusion 
 
-After looking at 4 different subpopulations we found that
+After looking at 4 different populations we found that females had the highest effectiveness at 67% and drug users at 60% if they received the vaccine. Both of the male and LGBTQ showed that the vaccine was not beneficial to them and were ineffective in protection against Covid-19, the males had a 40% effectiveness,while LGBTQ had 29% effectiveness, which is not at all effective.  
